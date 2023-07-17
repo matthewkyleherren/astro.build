@@ -30,7 +30,7 @@ module.exports = {
 				black: "#17191E",
 				// TODO: replace with brand off-white color
 				white: "#ffffff",
-				"astro-gray": {
+				"termitidae-gray": {
 					100: "#F2F6FA",
 					200: "#BFC1C9",
 					300: "#858B98",
@@ -39,10 +39,10 @@ module.exports = {
 					600: "#23262D",
 					700: "#17191E",
 				},
-				"astro-blue": "#3245FF",
-				"astro-purple": "#BC52EE",
-				"astro-purple-dark": "#3F224D",
-				"astro-red": "#D83333",
+				"termitidae-blue": "#3245FF",
+				"termitidae-purple": "#BC52EE",
+				"termitidae-purple-dark": "#3F224D",
+				"termitidae-red": "#D83333",
 				"astro-pink": {
 					light: "#E8C4F9",
 					DEFAULT: "#F041FF",
@@ -201,14 +201,14 @@ module.exports = {
 				},
 
 				".link": {
-					"@apply transition-colors text-astro-gray-100 hover:text-astro-gray-300": {},
+					"@apply transition-colors text-termitidae-gray-100 hover:text-termitidae-gray-300": {},
 				},
 				".link-underline": {
-					"@apply link border-b border-astro-gray-100 hover:border-astro-gray-300": {},
+					"@apply link border-b border-termitidae-gray-100 hover:border-termitidae-gray-300": {},
 				},
 
 				".input": {
-					"@apply rounded-lg border border-astro-gray-500 bg-astro-gray-600 p-3 leading-none shadow-inner":
+					"@apply rounded-lg border border-termitidae-gray-500 bg-termitidae-gray-600 p-3 leading-none shadow-inner":
 						{},
 				},
 				".input-textarea": {
@@ -218,7 +218,7 @@ module.exports = {
 				".noise-container": {
 					position: "relative",
 					isolation: "isolate",
-					backgroundColor: theme("colors.astro-gray.700"),
+					backgroundColor: theme("colors.termitidae-gray.700"),
 				},
 				".noise-underlay": {
 					zIndex: -30,
@@ -234,7 +234,7 @@ module.exports = {
 					pointerEvents: "none",
 				},
 				".noise-panel": {
-					"@apply relative isolate border border-astro-gray-500 bg-astro-gray-600 shadow-xl": {},
+					"@apply relative isolate border border-termitidae-gray-500 bg-termitidae-gray-600 shadow-xl": {},
 					"&::before": {
 						"@apply absolute inset-0 opacity-40 mix-blend-overlay -z-20": {},
 						content: "''",
@@ -250,9 +250,9 @@ module.exports = {
 					// https://stackoverflow.com/a/32861765/1332403
 					backgroundSize: "20px 20px",
 					backgroundImage: `linear-gradient(to right, ${theme(
-						"colors.astro-gray.600",
+						"colors.termitidae-gray.600",
 					)} 1px, transparent 1px),\n    linear-gradient(to bottom, ${theme(
-						"colors.astro-gray.600",
+						"colors.termitidae-gray.600",
 					)} 1px, transparent 1px)`,
 					backgroundPosition: "top center",
 					imageRendering: "pixelated",

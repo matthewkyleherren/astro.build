@@ -14,7 +14,7 @@ export interface Props extends astroHTML.JSX.InputHTMLAttributes {}
 
 <script>
 	import Quill from "quill"
-	import { getElement } from "~/helpers/dom.js"
+import { getElement } from "~/helpers/dom.js"
 
 	import { sanitizeThemeDescription } from "~/helpers/themes.js"
 
@@ -56,7 +56,7 @@ export interface Props extends astroHTML.JSX.InputHTMLAttributes {}
 <style is:global>
 	.ql-toolbar.ql-snow {
 		border: none;
-		border-bottom: 1px solid theme("colors.astro-gray.500");
+		border-bottom: 1px solid theme("colors.termitidae-gray.500");
 	}
 
 	.ql-container.ql-snow {
@@ -64,20 +64,20 @@ export interface Props extends astroHTML.JSX.InputHTMLAttributes {}
 	}
 
 	.ql-snow .ql-picker {
-		@apply text-astro-gray-200;
+		@apply text-termitidae-gray-200;
 	}
 	.ql-snow .ql-picker-options {
-		@apply bg-astro-gray-600;
+		@apply bg-termitidae-gray-600;
 	}
 
 	.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label,
 	.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
-		@apply border-astro-gray-500;
+		@apply border-termitidae-gray-500;
 	}
 
 	.ql-snow .ql-stroke,
 	.ql-snow .ql-fill {
-		@apply stroke-astro-gray-200;
+		@apply stroke-termitidae-gray-200;
 	}
 
 	/* lol */

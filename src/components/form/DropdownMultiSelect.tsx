@@ -63,7 +63,7 @@ export function DropdownMultiSelect(props: {
 						fallback={<span class="opacity-75">Choose all that apply</span>}
 					>
 						{(option) => (
-							<span class="rounded border border-astro-gray-300 bg-astro-gray-500 p-1 text-sm leading-none">
+							<span class="rounded border border-termitidae-gray-300 bg-termitidae-gray-500 p-1 text-sm leading-none">
 								{option.label}
 							</span>
 						)}
@@ -81,7 +81,7 @@ export function DropdownMultiSelect(props: {
 								type="checkbox"
 								name={props.name}
 								value={option.value}
-								class="peer absolute inset-0 cursor-pointer appearance-none rounded outline-none ring-astro-gray-200 focus-visible:ring-2"
+								class="peer absolute inset-0 cursor-pointer appearance-none rounded outline-none ring-termitidae-gray-200 focus-visible:ring-2"
 								onInput={(event) => {
 									setValues((values) => {
 										const newValues = new Set(values)

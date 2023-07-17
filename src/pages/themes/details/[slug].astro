@@ -55,38 +55,38 @@ const images = await resolveAllImages(theme)
 				/>
 			)
 		}
-		<div class="flex flex-col border-astro-gray-500 md:flex-row xl:border-x">
+		<div class="flex flex-col border-termitidae-gray-500 md:flex-row xl:border-x">
 			<section class="flex w-full flex-col gap-6 py-6 md:gap-8 md:p-8 lg:gap-10 lg:px-20 lg:py-10">
 				<a
 					href="/themes/"
 					rel="prefetch"
-					class="flex items-center gap-2 self-start text-sm text-astro-gray-200"
+					class="flex items-center gap-2 self-start text-sm text-termitidae-gray-200"
 				>
 					<LeftArrowIcon aria-hidden="true" />
 					<span class="pr-2">Back to themes</span>
 				</a>
 				<div>
 					<h1 class="heading-3 mb-4 sm:heading-2">{theme.data.title}</h1>
-					<p class="text-lg text-astro-gray-200 lg:text-xl">{theme.data.description}</p>
+					<p class="text-lg text-termitidae-gray-200 lg:text-xl">{theme.data.description}</p>
 					<ThemeCTAs theme={theme} class="py-6 md:hidden" />
-					<hr class="border-astro-gray-500 md:hidden" />
+					<hr class="border-termitidae-gray-500 md:hidden" />
 					<ThemeStats theme={theme} class="py-4 md:hidden" />
 				</div>
-				<hr class="hidden border-astro-gray-500 md:block" />
+				<hr class="hidden border-termitidae-gray-500 md:block" />
 				<article class="prose">
 					<Content />
 				</article>
 			</section>
 
 			<aside
-				class="hidden w-full divide-y divide-astro-gray-500 border-astro-gray-500 md:block md:max-w-md md:border-l"
+				class="hidden w-full divide-y divide-termitidae-gray-500 border-termitidae-gray-500 md:block md:max-w-md md:border-l"
 			>
 				<ThemeCTAs theme={theme} class="p-6 lg:p-8 xl:p-10" />
-				<hr class="border-astro-gray-500" />
+				<hr class="border-termitidae-gray-500" />
 				<ThemeStats theme={theme} class="p-6 lg:p-8 xl:p-10" />
 			</aside>
 		</div>
-		<div class="related bleed-full relative border-t border-astro-gray-500">
+		<div class="related bleed-full relative border-t border-termitidae-gray-500">
 			<div class="grid-container gap-y-10 pb-0 pt-20">
 				<CardGridGroup
 					title="Other themes to consider"

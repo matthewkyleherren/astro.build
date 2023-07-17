@@ -3,7 +3,7 @@ import ChevronIcon from "~/icons/ChevronIcon.jsx"
 ---
 
 <div data-code-block class="bg-blue-purple-gradient p-0.5 shadow-sm">
-	<div class="flex items-center bg-astro-gray-600">
+	<div class="flex items-center bg-termitidae-gray-600">
 		<ChevronIcon class="relative ml-4 mr-2 block w-3 -rotate-90" />
 
 		<code data-code class="code flex-1 text-left leading-none">
@@ -42,8 +42,8 @@ import ChevronIcon from "~/icons/ChevronIcon.jsx"
 
 <script>
 	import { createEffect } from "solid-js"
-	import { getElement } from "~/helpers/dom.js"
-	import { createTimer } from "~/helpers/timer.js"
+import { getElement } from "~/helpers/dom.js"
+import { createTimer } from "~/helpers/timer.js"
 
 	for (const codeBlock of document.querySelectorAll("[data-code-block]")) {
 		const code = getElement("[data-code]", HTMLElement, codeBlock)

@@ -21,7 +21,7 @@ const image = await resolveCoverImage(post)
 ---
 
 <article
-	class="border border-astro-gray-500 bg-astro-gray-600 p-5 outline-astro-pink-light transition-transform duration-300 ease-out focus-within:outline hover:scale-[1.03]"
+	class="border border-termitidae-gray-500 bg-termitidae-gray-600 p-5 outline-astro-pink-light transition-transform duration-300 ease-out focus-within:outline hover:scale-[1.03]"
 >
 	<a
 		href={isCaseStudy ? `/case-studies/${post.slug}/` : `/blog/${post.slug}/`}
@@ -29,7 +29,7 @@ const image = await resolveCoverImage(post)
 		class="block outline-none"
 	>
 		<header>
-			<time class="code text-astro-gray-200" datetime={post.data.publishDate.toISOString()}>
+			<time class="code text-termitidae-gray-200" datetime={post.data.publishDate.toISOString()}>
 				{format(post.data.publishDate, "MMMM d, yyyy")}
 			</time>
 		</header>
@@ -50,7 +50,7 @@ const image = await resolveCoverImage(post)
 
 		<div class="mt-6 grid gap-x-16 gap-y-4 md:grid-cols-2">
 			<h3 class="heading-4 md:heading-3">{post.data.title}</h3>
-			<p class="text-astro-gray-200">{post.data.description}</p>
+			<p class="text-termitidae-gray-200">{post.data.description}</p>
 		</div></a
 	>
 </article>

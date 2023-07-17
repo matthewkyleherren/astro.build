@@ -20,37 +20,37 @@ const { uid } = Astro.props
 
 <style>
 	aside :global(a) {
-		@apply underline hover:text-astro-gray-200;
+		@apply underline hover:text-termitidae-gray-200;
 	}
 </style>
 
 <script is:inline>
-	// inline function to ensure it executes immediately
-	;(function () {
-		const banner = document.getElementById("notification-banner")
-		if (!banner) {
-			return
-		}
-		const uid = banner.dataset.uid
-		if (!uid) {
-			return
-		}
-		const key = `astro-banner-${uid}`
-		const removeBanner = () => banner.parentElement.removeChild(banner)
-		if (localStorage.getItem(key) === "closed") {
-			// banner was already closed previously
-			removeBanner()
-		} else {
-			const button = banner.querySelector("button")
-			button.addEventListener(
-				"click",
-				() => {
-					// save the close preference and remove the banner
-					localStorage.setItem(key, "closed")
-					removeBanner()
-				},
-				{ once: true },
-			)
-		}
-	})()
+// inline function to ensure it executes immediately
+; (function () {
+	const banner = document.getElementById("notification-banner")
+	if (!banner) {
+		return
+	}
+	const uid = banner.dataset.uid
+	if (!uid) {
+		return
+	}
+	const key = `astro-banner-${uid}`
+	const removeBanner = () => banner.parentElement.removeChild(banner)
+	if (localStorage.getItem(key) === "closed") {
+		// banner was already closed previously
+		removeBanner()
+	} else {
+		const button = banner.querySelector("button")
+		button.addEventListener(
+			"click",
+			() => {
+				// save the close preference and remove the banner
+				localStorage.setItem(key, "closed")
+				removeBanner()
+			},
+			{ once: true },
+		)
+	}
+})()
 </script>

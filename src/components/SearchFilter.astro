@@ -35,7 +35,7 @@ const resetHref =
 ---
 
 <form action={indexRoute} class="searchfilter">
-	<div class="border-b border-astro-gray-500">
+	<div class="border-b border-termitidae-gray-500">
 		<TextInput
 			class="w-full"
 			type="search"
@@ -60,7 +60,7 @@ const resetHref =
 		{
 			groups.map(({ title, options }) => (
 				<>
-					<hr class="my-4 border-astro-gray-500" />
+					<hr class="my-4 border-termitidae-gray-500" />
 					<Accordion summary={title} open={options.some(({ selected }) => selected)}>
 						<fieldset class="flex flex-col items-start gap-2">
 							{options.map(({ id, name, value, label, selected }) => (

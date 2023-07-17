@@ -11,7 +11,7 @@ import FormErrorList from "~/components/form/FormErrorList.astro"
 import FormFieldSet from "~/components/form/FormFieldSet.astro"
 import FormRadioGroup from "~/components/form/FormRadioGroup.astro"
 import RichTextEditor from "~/components/form/RichTextEditor.astro"
-import { themeSchema, ThemeTools } from "~/content/config.js"
+import { ThemeTools, themeSchema } from "~/content/config.js"
 import { editDiscordWebhookMessage, executeDiscordWebhook } from "~/helpers/discord.js"
 import { sanitizeThemeDescription } from "~/helpers/themes.js"
 import MainLayout from "~/layouts/MainLayout.astro"
@@ -167,10 +167,10 @@ if (prefilled != null) {
 
 <MainLayout title="Submit a theme" image={{ src: "/og/themes-submit.jpg", alt: "Submit a theme" }}>
 	<div class="flex items-start">
-		<div class="flex-1 border-astro-gray-600 p-8 lg:border-r">
+		<div class="flex-1 border-termitidae-gray-600 p-8 lg:border-r">
 			<div class="mx-auto max-w-4xl">
 				<h1 class="heading-3 mb-4 lg:heading-2">Submit a theme</h1>
-				<p class="text-astro-gray-200">
+				<p class="text-termitidae-gray-200">
 					Thank you for sharing your themes with the Astro community! Choose to make your theme free
 					or paid. All payments go directly to you, we don't handle the sale or take a cut.
 				</p>
@@ -186,13 +186,13 @@ if (prefilled != null) {
 					)
 				}
 
-				<hr class="my-8 border-astro-gray-600" />
+				<hr class="my-8 border-termitidae-gray-600" />
 
 				<div class="lg:hidden">
 					<BestPractices />
 				</div>
 
-				<hr class="my-8 border-astro-gray-600 lg:hidden" />
+				<hr class="my-8 border-termitidae-gray-600 lg:hidden" />
 
 				<form method="post" enctype="multipart/form-data" class="grid gap-10">
 					<FormFieldSet legend="Images">
@@ -363,7 +363,7 @@ if (prefilled != null) {
 				</form>
 			</div>
 		</div>
-		<div class="hidden basis-[420px] bg-astro-gray-600 p-10 lg:block">
+		<div class="hidden basis-[420px] bg-termitidae-gray-600 p-10 lg:block">
 			<BestPractices />
 		</div>
 	</div>

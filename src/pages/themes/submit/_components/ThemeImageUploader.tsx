@@ -92,7 +92,7 @@ export function ThemeImageUploader() {
 
 function ImagePlaceholder(props: { children?: JSX.Element; previewSrc?: string }) {
 	return (
-		<div class="group noise-panel relative flex aspect-video flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-astro-gray-300 bg-astro-gray-600 ring-2 ring-transparent transition focus-within:ring-purple-500 hover:brightness-90">
+		<div class="group noise-panel relative flex aspect-video flex-col items-center justify-center overflow-hidden rounded-2xl border border-dashed border-termitidae-gray-300 bg-termitidae-gray-600 ring-2 ring-transparent transition focus-within:ring-purple-500 hover:brightness-90">
 			{props.children}
 			<Show when={props.previewSrc} keyed>
 				{(src) => (
@@ -117,7 +117,7 @@ function FeaturedImageContent() {
 					*
 				</span>
 			</h3>
-			<p class="mb-6 text-sm leading-tight text-astro-gray-200">
+			<p class="mb-6 text-sm leading-tight text-termitidae-gray-200">
 				Drag and drop to upload (max 1 image)
 			</p>
 			<p class="button button-white button-sm">
@@ -132,7 +132,7 @@ function AdditionalImageContent() {
 	return (
 		<section class="flex flex-col items-center justify-center p-4 text-center font-light">
 			<h3 class="text-xl">Additional Theme Images</h3>
-			<p class="mb-2 text-sm text-astro-gray-200">Drag and drop to upload (max 8 images)</p>
+			<p class="mb-2 text-sm text-termitidae-gray-200">Drag and drop to upload (max 8 images)</p>
 			<p class="button button-sm button button-white h-8 px-3">
 				Or Select Files
 				<FileUploadIcon aria-hidden />
