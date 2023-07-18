@@ -46,18 +46,18 @@ const { images, class: className, ...attrs } = Astro.props
 		</ul>
 
 		<div
-			class="absolute bottom-6 right-6 z-10 hidden h-24 w-12 flex-col divide-y divide-astro-gray-400 sm:flex"
+			class="absolute bottom-6 right-6 z-10 hidden h-24 w-12 flex-col divide-y divide-termitidae-gray-400 sm:flex"
 		>
 			<button
 				id="gallery-prev"
-				class="flex flex-1 items-center justify-center rounded-t-full bg-astro-gray-500 text-astro-gray-200 outline-astro-pink-light focus-within:z-20 hover:z-20 hover:outline focus:outline-2"
+				class="flex flex-1 items-center justify-center rounded-t-full bg-termitidae-gray-500 text-termitidae-gray-200 outline-astro-pink-light focus-within:z-20 hover:z-20 hover:outline focus:outline-2"
 			>
 				<RightArrowIcon class="-rotate-90" aria-hidden="true" />
 				<span class="sr-only">Go to previous image</span>
 			</button>
 			<button
 				id="gallery-next"
-				class="flex flex-1 items-center justify-center rounded-b-full bg-astro-gray-500 text-astro-gray-200 outline-astro-pink-light focus-within:z-20 hover:z-20 hover:outline focus:outline-2"
+				class="flex flex-1 items-center justify-center rounded-b-full bg-termitidae-gray-500 text-termitidae-gray-200 outline-astro-pink-light focus-within:z-20 hover:z-20 hover:outline focus:outline-2"
 			>
 				<RightArrowIcon class="rotate-90" aria-hidden="true" />
 				<span class="sr-only">Go to next image</span>
@@ -89,7 +89,7 @@ const { images, class: className, ...attrs } = Astro.props
 			{
 				images.map((_, i) => (
 					<div
-						class="pill h-2.5 w-2.5 rounded-full bg-astro-gray-100 transition-all duration-200 ease-in-out"
+						class="pill h-2.5 w-2.5 rounded-full bg-termitidae-gray-100 transition-all duration-200 ease-in-out"
 						aria-current={i === 0 ? "true" : "false"}
 					/>
 				))
@@ -127,11 +127,11 @@ const { images, class: className, ...attrs } = Astro.props
 	}
 
 	nav::-webkit-scrollbar-track {
-		@apply bg-astro-gray-700;
+		@apply bg-termitidae-gray-700;
 	}
 
 	nav::-webkit-scrollbar-thumb {
-		@apply cursor-pointer rounded-full bg-astro-gray-300;
+		@apply cursor-pointer rounded-full bg-termitidae-gray-300;
 	}
 </style>
 

@@ -1,5 +1,5 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
 export type Props = HTMLAttributes<"section"> & {
 	columnReverse?: boolean
@@ -10,7 +10,7 @@ const { class: className, columnReverse = false, ...attrs } = Astro.props
 
 <div
 	class:list={[
-		"flex lg:flex-row border-t border-astro-gray-500",
+		"flex lg:flex-row border-t border-termitidae-gray-500",
 		columnReverse ? "flex-col-reverse" : "flex-col",
 		className,
 	]}

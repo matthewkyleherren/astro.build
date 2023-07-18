@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content"
+import type { CollectionEntry } from "astro:content";
 
 export type Props = {
 	careers: CollectionEntry<"careers">[]
@@ -11,7 +11,7 @@ const { careers } = Astro.props
 <ul class="flex w-full max-w-screen-lg flex-col gap-4 text-start">
 	{
 		careers.map((career) => (
-			<li class="noise-panel border border-astro-gray-500 bg-astro-gray-600">
+			<li class="noise-panel border border-termitidae-gray-500 bg-termitidae-gray-600">
 				<a
 					href={`/careers/${career.slug}`}
 					rel="prefetch"
@@ -19,7 +19,7 @@ const { careers } = Astro.props
 				>
 					<div>
 						<h3 class="heading-4 md:heading-3">{career.data.title}</h3>
-						<p class="body mt-2 text-astro-gray-300 md:body-large">{career.data.location}</p>
+						<p class="body mt-2 text-termitidae-gray-300 md:body-large">{career.data.location}</p>
 					</div>
 					<svg
 						width="59"

@@ -67,12 +67,12 @@ const authors = await Promise.all(
 	}
 
 	<div
-		class="noise-container mx-auto max-w-full bg-astro-gray-700 px-8 py-5 sm:py-8 md:z-10 md:px-10 md:py-12 lg:p-12 lg:py-16 xl:p-16 xl:py-20"
+		class="noise-container mx-auto max-w-full bg-termitidae-gray-700 px-8 py-5 sm:py-8 md:z-10 md:px-10 md:py-12 lg:p-12 lg:py-16 xl:p-16 xl:py-20"
 	>
 		<div class="noise"></div>
 
 		<header class="mx-auto w-full max-w-4xl text-center">
-			<p class="code text-astro-gray-200">
+			<p class="code text-termitidae-gray-200">
 				Case Study &bull;
 				<time datetime={data.publishDate.toISOString()}>
 					{format(data.publishDate, "MMMM d, yyyy")}
@@ -84,7 +84,7 @@ const authors = await Promise.all(
 					{data.description}
 				</div>
 			</h1>
-			<div class="code flex flex-wrap items-center justify-center gap-4 text-astro-gray-200">
+			<div class="code flex flex-wrap items-center justify-center gap-4 text-termitidae-gray-200">
 				<span>By</span>
 				{
 					authors.map((author) => {
@@ -99,14 +99,14 @@ const authors = await Promise.all(
 			</div>
 		</header>
 
-		<hr class="-mx-16 my-16 border-astro-gray-500" />
+		<hr class="-mx-16 my-16 border-termitidae-gray-500" />
 
 		<article class="prose">
 			<Content />
 		</article>
 
 		<footer
-			class="mx-auto mt-8 flex w-full max-w-prose flex-col items-center gap-6 overflow-hidden rounded-lg border border-astro-purple bg-astro-gray-700 px-4 pt-4 md:flex-row md:pt-0"
+			class="mx-auto mt-8 flex w-full max-w-prose flex-col items-center gap-6 overflow-hidden rounded-lg border border-termitidae-purple bg-termitidae-gray-700 px-4 pt-4 md:flex-row md:pt-0"
 		>
 			<div class="flex flex-1 flex-col gap-2 text-center md:my-5 md:pt-0 md:text-left">
 				<h2 class="heading-4">Take Astro for a spin</h2>

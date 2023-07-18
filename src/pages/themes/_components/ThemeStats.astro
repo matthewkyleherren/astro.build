@@ -18,14 +18,14 @@ const netlifyUrl =
 
 <div class:list={["flex flex-col gap-4", className]} {...attrs}>
 	<div class="flex items-center justify-between">
-		<small class="code text-astro-gray-200">Cost</small>
+		<small class="code text-termitidae-gray-200">Cost</small>
 		<Badge theme={theme.data.paid ? "primary" : "secondary"}>
 			{theme.data.paid ? "Paid" : "Free"}
 		</Badge>
 	</div>
-	<hr class="border-astro-gray-500" />
+	<hr class="border-termitidae-gray-500" />
 	<div class="flex items-center justify-between">
-		<small class="code text-astro-gray-200">Created by</small>
+		<small class="code text-termitidae-gray-200">Created by</small>
 		<a href={theme.data.author.url} target="_blank" class="link">
 			<Avatar theme={theme} />
 		</a>
@@ -33,7 +33,7 @@ const netlifyUrl =
 	{
 		netlifyUrl && (
 			<>
-				<hr class="border-astro-gray-500" />
+				<hr class="border-termitidae-gray-500" />
 				<a href={netlifyUrl} class="link flex flex-row items-center gap-2" target="_blank">
 					<img
 						src="/assets/integrations/netlify-dark.svg"

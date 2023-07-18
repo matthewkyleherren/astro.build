@@ -1,5 +1,5 @@
 ---
-import type { HTMLAttributes } from "astro/types"
+import type { HTMLAttributes } from "astro/types";
 
 export type Props = HTMLAttributes<"input">
 
@@ -7,7 +7,7 @@ const { type = "text", class: className, ...attrs } = Astro.props
 ---
 
 <div
-	class="flex items-center gap-2 rounded-lg border border-gray-500 bg-astro-gray-600 px-3 py-2 text-astro-gray-100 -outline-offset-2 focus-within:outline"
+	class="flex items-center gap-2 rounded-lg border border-gray-500 bg-termitidae-gray-600 px-3 py-2 text-termitidae-gray-100 -outline-offset-2 focus-within:outline"
 >
 	<slot name="icon" />
 	<input

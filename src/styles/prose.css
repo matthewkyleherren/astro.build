@@ -1,6 +1,6 @@
 @layer components {
 	.prose {
-		@apply body mx-auto w-full max-w-prose tracking-wide text-astro-gray-200 lg:text-lg;
+		@apply body mx-auto w-full max-w-prose tracking-wide text-termitidae-gray-200 lg:text-lg;
 		line-height: 1.75em;
 	}
 
@@ -9,7 +9,7 @@
 	}
 
 	.prose > hr {
-		@apply my-8 border-astro-gray-500;
+		@apply my-8 border-termitidae-gray-500;
 	}
 
 	.prose > h2 {
@@ -59,10 +59,10 @@
 	}
 
 	.prose > p code {
-		@apply mx-0.5 inline-block rounded-lg bg-astro-gray-500 px-2 align-baseline text-sm leading-6 text-astro-gray-100;
+		@apply mx-0.5 inline-block rounded-lg bg-termitidae-gray-500 px-2 align-baseline text-sm leading-6 text-termitidae-gray-100;
 	}
 
 	.prose > pre {
-		@apply my-6 rounded-md border border-astro-gray-400 bg-transparent px-5 py-3 text-sm;
+		@apply my-6 rounded-md border border-termitidae-gray-400 bg-transparent px-5 py-3 text-sm;
 	}
 }

@@ -15,7 +15,7 @@ const { title, body, class: className, ...attrs } = Astro.props
 	</h2>
 	{
 		(body || Astro.slots.has("body")) && (
-			<p class="body max-w-3xl px-8 text-center text-astro-gray-200 sm:body-large">
+			<p class="body max-w-3xl px-8 text-center text-termitidae-gray-200 sm:body-large">
 				<slot name="body">{body}</slot>
 			</p>
 		)
